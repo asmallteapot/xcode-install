@@ -13,16 +13,16 @@ module XcodeInstall
   end
 
   class Command < CLAide::Command
-    require 'xcode/install/cleanup'
-    require 'xcode/install/cli'
-    require 'xcode/install/install'
-    require 'xcode/install/installed'
-    require 'xcode/install/list'
-    require 'xcode/install/select'
-    require 'xcode/install/selected'
-    require 'xcode/install/uninstall'
-    require 'xcode/install/update'
-    require 'xcode/install/simulators'
+    require 'xcode/install/commands/cleanup'
+    require 'xcode/install/commands/cli'
+    require 'xcode/install/commands/install'
+    require 'xcode/install/commands/installed'
+    require 'xcode/install/commands/list'
+    require 'xcode/install/commands/select'
+    require 'xcode/install/commands/selected'
+    require 'xcode/install/commands/uninstall'
+    require 'xcode/install/commands/update'
+    require 'xcode/install/commands/simulators'
 
     self.abstract_command = true
     self.command = 'xcversion'
